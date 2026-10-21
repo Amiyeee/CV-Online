@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ryan Hamid Muhammad - Network & Cloud Engineer</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome (Untuk Ikon Hard Skills & Soft Skills) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Phosphor Icons (Untuk Ikon General) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- QRCode.js (Untuk generate QR Code secara offline/client-side) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0f172a; /* slate-900 */
+            color: #cbd5e1; /* slate-300 */
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7); /* slate-800 transparan */
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.8); /* slate-700 */
+        }
+        /* Custom Scrollbar Tema Gelap */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="antialiased min-h-screen pb-12 selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar / Header Background -->
+    <div class="h-64 bg-gradient-to-r from-slate-800 to-brand-900 w-full absolute top-0 -z-10 rounded-b-3xl sm:rounded-b-[4rem] shadow-lg border-b border-slate-700"></div>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
+        
+        <!-- 1. Section Profil -->
+        <header class="glass-card rounded-3xl shadow-xl p-8 mb-8 text-center sm:text-left sm:flex sm:items-center sm:gap-8 transform transition-all hover:shadow-2xl">
+            <div class="relative w-40 h-40 mx-auto sm:mx-0 shrink-0 mb-6 sm:mb-0">
+                <!-- Foto Profil: Ganti src dengan link foto asli Anda -->
+                <img src="CON_4314.JPG" alt="Foto Profil" class="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-md">
+                <div class="absolute bottom-2 right-2 bg-green-500 w-5 h-5 rounded-full border-2 border-slate-800" title="Tersedia untuk bekerja"></div>
+            </div>
+            
+            <div class="flex-1">
+                <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">Ryan Hamid Muhammad</h1>
+                <h2 class="text-xl font-medium text-brand-400 mb-4">Network & Cloud Engineer</h2>
+                
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-sm text-slate-300 mb-6">
+                    <span class="flex items-center gap-1.5"><i class="ph ph-map-pin text-lg text-brand-400"></i> Paciran, Lamongan, Jatim</span>
+                    <span class="flex items-center gap-1.5"><i class="ph ph-envelope-simple text-lg text-brand-400"></i> ryanhamid527@gmail.com</span>
+                    <span class="flex items-center gap-1.5"><i class="ph ph-phone text-lg text-brand-400"></i> +62 831-2967-3210</span>
+                </div>
+
+                <div class="flex justify-center sm:justify-start gap-3">
+                    <!-- Link GitHub -->
+                    <a href="https://github.com/Amiyeee" target="_blank" class="p-2 rounded-full bg-slate-700 text-slate-300 hover:bg-brand-600 hover:text-white transition-colors"><i class="ph ph-github-logo text-2xl"></i></a>
+                    
+                    <!-- Link LinkedIn -->
+                    <a href="https://www.linkedin.com/in/ryan-hamid-b47aa5285" target="_blank" class="p-2 rounded-full bg-slate-700 text-slate-300 hover:bg-brand-600 hover:text-white transition-colors"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                    
+                    <!-- Link Email (Otomatis membuka aplikasi email) -->
+                    <a href="mailto:ryanhamid527@gmail.com" class="p-2 rounded-full bg-slate-700 text-slate-300 hover:bg-brand-600 hover:text-white transition-colors"><i class="ph ph-envelope-simple text-2xl"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container Grid Utama -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Kolom Kiri (Lebih Lebar - Konten Utama) -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- 2. Tentang Saya -->
+                <section class="glass-card rounded-2xl shadow-sm p-8">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4 border-b border-slate-700 pb-3">
+                        <i class="ph ph-user text-brand-500 text-2xl"></i> Tentang Saya
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed text-justify">
+                        Saya adalah seorang lulusan Sarjana Terapan (S.Tr.) di bidang Teknologi Rekayasa Internet dari Politeknik Elektronika Negeri Surabaya. Saya memiliki minat yang kuat dalam pengembangan teknologi, manajemen proyek, atau pelayanan publik. Selama masa studi, saya telah membekali diri dengan kombinasi pemahaman teoretis yang kuat dan keterampilan praktis terapan. Saya berdedikasi tinggi, berorientasi pada pemecahan masalah (problem-solving), dan selalu antusias untuk belajar hal baru serta berkolaborasi dalam tim untuk mencapai tujuan organisasi.
+                    </p>
+                </section>
+
+                <!-- 3. Keahlian Teknis (Hard Skills) -->
+                <section class="glass-card rounded-2xl shadow-sm p-8">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-3 mb-6 border-b border-slate-700 pb-4">
+                        <i class="fa-solid fa-network-wired text-brand-500"></i> Keahlian Teknis (Hard Skills)
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Jaringan & Infrastruktur -->
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400">
+                                    <i class="fa-solid fa-server text-xl"></i>
+                                </div>
+                                <h4 class="text-base font-bold text-white">AI Dev & Management</h4>
+                            </div>
+                            <ul class="text-slate-400 text-sm space-y-2 ml-1">
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Machine Learning & Deep Learning</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Data Processing & Analytics</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>AI Frameworks (TensorFlow/Scikit)</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Model Evaluation & Deployment</li>
+                            </ul>
+                        </div>
+
+                        <!-- Cloud & System Administration -->
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400">
+                                    <i class="fa-brands fa-aws text-xl"></i>
+                                </div>
+                                <h4 class="text-base font-bold text-white">Cloud & System Admin</h4>
+                            </div>
+                            <ul class="text-slate-400 text-sm space-y-2 ml-1">
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Linux Server Management</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Virtualization & Docker</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>AWS / Google Cloud (GCP)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Internet of Things (IoT) -->
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400">
+                                    <i class="fa-solid fa-microchip text-xl"></i>
+                                </div>
+                                <h4 class="text-base font-bold text-white">Internet of Things (IoT)</h4>
+                            </div>
+                            <ul class="text-slate-400 text-sm space-y-2 ml-1">
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Mikrokontroler (ESP32/Arduino)</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>MQTT & Sensor Integration</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Sistem Monitoring Real-time</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pemrograman & Web -->
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center text-yellow-400">
+                                    <i class="fa-solid fa-code text-xl"></i>
+                                </div>
+                                <h4 class="text-base font-bold text-white">Pemrograman & Web</h4>
+                            </div>
+                            <ul class="text-slate-400 text-sm space-y-2 ml-1">
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Python (Scripting/Automation)</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Dasar C/C++</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>RESTful API</li>
+                                <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Web Server (Nginx/Apache)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Pengalaman Kerja -->
+                <section class="glass-card rounded-2xl shadow-sm p-8">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6 border-b border-slate-700 pb-3">
+                        <i class="ph ph-briefcase text-brand-500 text-2xl"></i> Pengalaman Kerja & Magang
+                    </h3>
+                    
+                    <div class="relative border-l-2 border-slate-600 ml-3 md:ml-4 space-y-8">
+                        <div class="relative pl-6 md:pl-8">
+                            <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-slate-800"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                                <h4 class="text-lg font-bold text-white">IT Support</h4>
+                                <span class="text-sm font-medium text-brand-300 bg-brand-900/50 border border-brand-500/30 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0">Jan 2025 - Jun 2025</span>
+                            </div>
+                            <h5 class="text-md font-medium text-brand-400 mb-3">PT. Lintech Duta Pratama (Lintech Seaside Facility)</h5>
+                            <ul class="list-disc list-outside ml-4 text-slate-300 space-y-1 text-sm">
+                                <li>Membantu Pembuatan Projek Scan Absen.</li>
+                                <li>Membantu Pembuatan Gerbang Wireless.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Pendidikan -->
+                <section class="glass-card rounded-2xl shadow-sm p-8">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6 border-b border-slate-700 pb-3">
+                        <i class="ph ph-graduation-cap text-brand-500 text-2xl"></i> Pendidikan
+                    </h3>
+                    <div class="relative border-l-2 border-slate-600 ml-3 md:ml-4 space-y-6">
+                        <div class="relative pl-6 md:pl-8">
+                            <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-slate-800"></span>
+                            <h4 class="text-lg font-bold text-white">D4/S1 Teknologi Rekayasa Internet</h4>
+                            <h5 class="text-md font-medium text-brand-400 mb-1">Politeknik Elektronika Negeri Surabaya</h5>
+                            <p class="text-sm text-slate-300 font-semibold mb-2">Lulus dengan IPK 3.44 / 4.00</p>
+                            <p class="text-sm text-slate-400 leading-relaxed italic">
+                                "Rancang Bangun Framework Deteksi Serangan Siber Berbasis Kecerdasan Buatan untuk Keamanan IoV." (Judul Tugas Akhir)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative border-l-2 border-slate-600 ml-3 md:ml-4 space-y-6">
+                        <div class="relative pl-6 md:pl-8">
+                            <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-slate-800"></span>
+                            <h5 class="text-md font-medium text-brand-400 mb-1">SMAU BP Amanatul Ummah Mojokerto</h5>
+                        </div>
+                    </div>
+
+                    <div class="relative border-l-2 border-slate-600 ml-3 md:ml-4 space-y-6">
+                        <div class="relative pl-6 md:pl-8">
+                            <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-slate-800"></span>
+                            <h5 class="text-md font-medium text-brand-400 mb-1">SMP Bina Anak Sholeh Tuban</h5>
+                        </div>
+                    </div>
+
+                    <div class="relative border-l-2 border-slate-600 ml-3 md:ml-4 space-y-6">
+                        <div class="relative pl-6 md:pl-8">
+                            <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-slate-800"></span>
+                            <h5 class="text-md font-medium text-brand-400 mb-1">MI Mazra'atul Ulum 02 Paciran</h5>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Kolom Kanan (Sidebar Lebih Sempit) -->
+            <div class="space-y-8">
+                
+                <!-- 6. Keterampilan Interpersonal (Soft Skills) -->
+                <section class="glass-card rounded-2xl shadow-sm p-8">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6 border-b border-slate-700 pb-3">
+                        <i class="fa-solid fa-users-gear text-brand-500 text-2xl"></i> Soft Skills
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <span class="bg-slate-800/80 text-slate-200 font-medium px-4 py-3 rounded-lg text-sm border border-slate-600 flex items-center gap-3">
+                            <i class="fa-solid fa-magnifying-glass-chart text-brand-400 text-lg"></i> Troubleshooting & Logika
+                        </span>
+                        <span class="bg-slate-800/80 text-slate-200 font-medium px-4 py-3 rounded-lg text-sm border border-slate-600 flex items-center gap-3">
+                            <i class="fa-solid fa-list-check text-brand-400 text-lg"></i> Manajemen Proyek
+                        </span>
+                        <span class="bg-slate-800/80 text-slate-200 font-medium px-4 py-3 rounded-lg text-sm border border-slate-600 flex items-center gap-3">
+                            <i class="fa-solid fa-comments text-brand-400 text-lg"></i> Kerja Sama & Komunikasi
+                        </span>
+                    </div>
+                </section>
+
+                <!-- 7. Bagikan CV / Scan QR Code Client Side -->
+                <section class="glass-card rounded-2xl shadow-sm overflow-hidden border border-brand-500/30">
+                    <div class="bg-slate-800 border-b border-slate-700 p-4 text-center">
+                        <h3 class="text-lg font-bold text-white flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-qrcode text-brand-400 text-xl"></i> Bagikan CV Ini
+                        </h3>
+                        <p class="text-slate-400 text-xs mt-1">Scan untuk membuka di perangkat lain</p>
+                    </div>
+                    
+                    <div class="p-6 text-center bg-slate-900/50 flex flex-col items-center">
+                        <!-- Kotak QR Code -->
+                        <div class="bg-white p-3 rounded-xl shadow-sm mb-4 inline-block relative group">
+                            <div id="qrcode-container" class="transition-transform duration-300 group-hover:scale-105"></div>
+                        </div>
+                        
+                        <p class="text-sm text-slate-400 mb-4 truncate w-full px-2" id="url-text">Memuat tautan...</p>
+                        
+                        <button id="copy-btn" class="w-full flex items-center justify-center gap-2 bg-brand-600 text-white hover:bg-brand-500 transition-colors py-2.5 px-4 rounded-lg font-medium text-sm shadow-md">
+                            <i class="fa-regular fa-copy"></i> Salin Tautan
+                        </button>
+                        
+                        <!-- Notifikasi Sukses Salin -->
+                        <div id="copy-toast" class="opacity-0 transition-opacity duration-300 text-green-400 text-xs font-medium mt-3 flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-circle-check"></i> Berhasil disalin ke clipboard!
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tombol Download CV -->
+                <a href="CV Ryan Hamid.pdf" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white transition-colors py-3.5 px-4 rounded-xl font-medium shadow-md hover:shadow-lg">
+                    <i class="ph ph-download-simple text-xl"></i> Download CV (PDF)
+                </a>
+            </div>
+        </div>
+
+        <footer class="mt-16 text-center text-slate-500 text-sm pb-8">
+            <p>&copy; <span id="year"></span> Ryan Hamid Muhammad. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Script Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 1. Set tahun otomatis di footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Logika Generate QR Code (Offline/Client Side)
+            let currentUrl = window.location.href;
+            
+            // Fallback jika dibuka di iframe (misal di codepen/editor) agar URL tetap terbaca bentuk HTTP
+            if(currentUrl === 'about:srcdoc' || currentUrl.startsWith('blob:') || currentUrl.startsWith('file:')) {
+                currentUrl = 'https://ryanhamid.github.io/cv'; // Ganti dengan domain asli Anda nanti
+            }
+
+            // Tampilkan teks URL yang dipotong agar rapi di layar
+            const displayUrl = currentUrl.length > 35 ? currentUrl.substring(0, 32) + '...' : currentUrl;
+            document.getElementById('url-text').textContent = displayUrl;
+
+            // Generate QR Code menggunakan qrcode.js
+            const qrContainer = document.getElementById("qrcode-container");
+            qrContainer.innerHTML = ""; // Bersihkan kontainer
+            
+            new QRCode(qrContainer, {
+                text: currentUrl,
+                width: 150,
+                height: 150,
+                colorDark : "#0f172a", // Warna QR (slate-900)
+                colorLight : "#ffffff", // Background QR (putih)
+                correctLevel : QRCode.CorrectLevel.H
+            });
+
+            // 3. Logika Tombol Salin Tautan (Copy to Clipboard)
+            const copyBtn = document.getElementById('copy-btn');
+            const copyToast = document.getElementById('copy-toast');
+
+            copyBtn.addEventListener('click', () => {
+                // Menggunakan modern Clipboard API dengan fallback eksekusi command
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(currentUrl).then(showToast).catch(fallbackCopy);
+                } else {
+                    fallbackCopy();
+                }
+            });
+
+            function fallbackCopy() {
+                const tempInput = document.createElement("input");
+                tempInput.value = currentUrl;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                try {
+                    document.execCommand("copy");
+                    showToast();
+                } catch (err) {
+                    console.error('Gagal menyalin tautan: ', err);
+                }
+                document.body.removeChild(tempInput);
+            }
+
+            function showToast() {
+                copyToast.classList.remove('opacity-0');
+                // Sembunyikan notifikasi setelah 2.5 detik
+                setTimeout(() => {
+                    copyToast.classList.add('opacity-0');
+                }, 2500);
+            }
+        });
+    </script>
+</body>
+</html>
